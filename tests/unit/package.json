@@ -1,0 +1,11 @@
+{
+  "name": "@ts-weather/unit-tests",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Unit tests for ts-weather using Deno",
+  "dependencies": {
+    "@std/assert": "jsr:@std/assert@^1",
+    "@ts-weather/client": "workspace:*",
+    "@ts-weather/server": "workspace:*"
+  }
+}

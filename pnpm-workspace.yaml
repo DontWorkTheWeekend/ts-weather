@@ -1,0 +1,6 @@
+packages:
+  - 'src/client'
+  - 'src/server'
+  - 'tests/integration'
+  - 'tests/unit'
+  - 'utils'

@@ -1,0 +1,26 @@
+{
+  "name": "ts-weather-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Demo project showcasing Node.js erasable TypeScript types in a pnpm workspace",
+  "scripts": {
+    "server": "node src/server/index.ts",
+    "demo": "node utils/client-demo.ts",
+    "test": "pnpm run test:unit && pnpm run test:integration",
+    "test:unit": "cd tests/unit && deno test -A",
+    "test:integration": "cd tests/integration && deno test -A",
+    "check": "deno check",
+    "format": "deno fmt",
+    "format:check": "deno fmt --check",
+    "lint": "deno lint",
+    "lint:fix": "deno lint --fix"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "engineStrict": false,
+  "devDependencies": {
+    "@types/node": "^22.18.12"
+  }
+}

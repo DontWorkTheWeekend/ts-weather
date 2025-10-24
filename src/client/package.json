@@ -1,0 +1,10 @@
+{
+  "name": "@ts-weather/client",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Weather client using Node.js erasable TypeScript types",
+  "main": "index.ts",
+  "exports": {
+    ".": "./index.ts"
+  }
+}

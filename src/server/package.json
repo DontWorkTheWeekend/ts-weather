@@ -1,0 +1,16 @@
+{
+  "name": "@ts-weather/server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Weather server using Node.js erasable TypeScript types",
+  "main": "weather.ts",
+  "exports": {
+    ".": "./weather.ts"
+  },
+  "scripts": {
+    "start": "node index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.12"
+  }
+}

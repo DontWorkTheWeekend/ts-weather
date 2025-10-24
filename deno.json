@@ -1,0 +1,30 @@
+{
+  "workspace": [
+    "./tests/integration",
+    "./tests/unit"
+  ],
+  "compilerOptions": {
+    "erasableSyntaxOnly": true
+  },
+  "lint": {
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      "include": [
+        "ban-ts-comment",
+        "no-namespace",
+        "no-empty-enum"
+      ],
+      "exclude": [
+        "no-process-global"
+      ]
+    }
+  },
+  "fmt": {
+    "useTabs": false,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": true
+  }
+}

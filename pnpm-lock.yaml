@@ -1,0 +1,87 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+  .:
+    devDependencies:
+      '@types/node':
+        specifier: ^22.18.12
+        version: 22.18.12
+
+  src/client: {}
+
+  src/server:
+    devDependencies:
+      '@types/node':
+        specifier: ^22.18.12
+        version: 22.18.12
+
+  tests/integration:
+    dependencies:
+      '@std/assert':
+        specifier: jsr:@std/assert@^1
+        version: '@jsr/std__assert@1.0.15'
+      '@ts-weather/client':
+        specifier: workspace:*
+        version: link:../../src/client
+
+  tests/unit:
+    dependencies:
+      '@std/assert':
+        specifier: jsr:@std/assert@^1
+        version: '@jsr/std__assert@1.0.15'
+      '@ts-weather/client':
+        specifier: workspace:*
+        version: link:../../src/client
+      '@ts-weather/server':
+        specifier: workspace:*
+        version: link:../../src/server
+
+  utils:
+    dependencies:
+      '@ts-weather/client':
+        specifier: workspace:*
+        version: link:../src/client
+    devDependencies:
+      '@types/node':
+        specifier: ^22.18.12
+        version: 22.18.12
+
+packages:
+  '@jsr/std__assert@1.0.15':
+    resolution: {
+      integrity: sha512-iaekOy2yP8hMA5pN5PHMXic4MH0pRggviqTvPd4iEMkS66lDOFTV0uxDRwRc3ia4btRB39QiSUXJPpVZCQu8nA==,
+      tarball: https://npm.jsr.io/~/11/@jsr/std__assert/1.0.15.tgz,
+    }
+
+  '@jsr/std__internal@1.0.12':
+    resolution: {
+      integrity: sha512-6xReMW9p+paJgqoFRpOE2nogJFvzPfaLHLIlyADYjKMUcwDyjKZxryIbgcU+gxiTygn8yCjld1HoI0ET4/iZeA==,
+      tarball: https://npm.jsr.io/~/11/@jsr/std__internal/1.0.12.tgz,
+    }
+
+  '@types/node@22.18.12':
+    resolution: {
+      integrity: sha512-BICHQ67iqxQGFSzfCFTT7MRQ5XcBjG5aeKh5Ok38UBbPe5fxTyE+aHFxwVrGyr8GNlqFMLKD1D3P2K/1ks8tog==,
+    }
+
+  undici-types@6.21.0:
+    resolution: {
+      integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==,
+    }
+
+snapshots:
+  '@jsr/std__assert@1.0.15':
+    dependencies:
+      '@jsr/std__internal': 1.0.12
+
+  '@jsr/std__internal@1.0.12': {}
+
+  '@types/node@22.18.12':
+    dependencies:
+      undici-types: 6.21.0
+
+  undici-types@6.21.0: {}

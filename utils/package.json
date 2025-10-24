@@ -1,0 +1,12 @@
+{
+  "name": "@ts-weather/utils",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Utilities and demos for ts-weather",
+  "dependencies": {
+    "@ts-weather/client": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.12"
+  }
+}
