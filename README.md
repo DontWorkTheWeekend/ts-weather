@@ -1,6 +1,27 @@
-# Run TypeScript in Node.js Natively with Type Stripping
+# Video 1: Run TypeScript in Node.js Natively with Type Stripping
 
-A sample project demonstrating Node.js native TypeScript support with erasable types in a pnpm + Deno workspace.
+Run TypeScript natively in Node.js 22+ with type stripping - no tsc and no tsconfig. Follow a sample project using erasable type syntax, pnpm for dependency management and Deno handling type-checking, formatting, linting, and testing.
+
+**Watch the video:** https://youtu.be/mYbc5lGCPQ0
+
+Part of the [Don't Work The Weekend](https://www.youtube.com/@DontWorkTheWeekend) YouTube channel.
+
+## Key Code
+
+- [src directory](https://github.com/DontWorkTheWeekend/ts-weather/tree/001-node-type-stripping/src/)
+- [tests directory](https://github.com/DontWorkTheWeekend/ts-weather/tree/001-node-type-stripping/tests/)
+- [deno.json](https://github.com/DontWorkTheWeekend/ts-weather/tree/001-node-type-stripping/deno.json)
+- [package.json](https://github.com/DontWorkTheWeekend/ts-weather/tree/001-node-type-stripping/package.json)
+
+## Topics Covered
+
+- Running TypeScript natively in Node.js 22+ without compilation
+- Type stripping at parse time
+- Erasable type syntax vs. non-erasable syntax
+- Using pnpm workspaces for package management
+- Using Deno for type-checking, linting, and formatting
+- Setting up a dual workspace (pnpm + Deno)
+- Testing with Deno's testing framework
 
 ## Requirements
 
@@ -98,3 +119,7 @@ The Deno configuration enforces erasable-only syntax via `"erasableSyntaxOnly": 
 - Type-checks with Deno's fast checker
 
 Test packages use pnpm's BYONM (Bring Your Own Node Modules) mode to access workspace dependencies.
+
+---
+
+[Back to main README](https://github.com/DontWorkTheWeekend/ts-weather)
