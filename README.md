@@ -1,6 +1,10 @@
-# ts-weather
+# Video 4: TypeScript in node_models doesn't always work
 
-Monorepo containing Typescript-only packages deployed with `pnpm deploy`
+TypeScript in node_modules can be useful in private monorepos and works in Bun, but it's not working in NodeJS and Deno - those return `Error [ERR_UNSUPPORTED_NODE_MODULES_TYPE_STRIPPING]: Stripping types is currently unsupported for files under node_modules`
+
+**Watch the video:** https://youtu.be/hisgPClQeIg
+
+Part of the [Don't Work The Weekend](https://www.youtube.com/@DontWorkTheWeekend) YouTube channel.
 
 ## Prerequisite Operation
 
@@ -54,3 +58,7 @@ bun out/client-demo.ts
 - `node`: 22.21.1
 - `deno`: 2.5.6
 - `bun`: 1.3.1
+
+---
+
+[Back to main README](https://github.com/DontWorkTheWeekend/ts-weather)
