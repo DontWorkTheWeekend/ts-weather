@@ -1,4 +1,4 @@
-# Video 1: Run TypeScript in Node.js Natively with Type Stripping
+# Video 3: Run TypeScript in Node.js Natively with Type Stripping
 
 Run TypeScript natively in Node.js 22+ with type stripping - no tsc and no tsconfig. Follow a sample project using erasable type syntax, pnpm for dependency management and Deno handling type-checking, formatting, linting, and testing.
 
