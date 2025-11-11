@@ -6,4 +6,4 @@ Code repository for the [Don't Work The Weekend](https://www.youtube.com/@DontWo
 
 | # | Title | Branch | Video |
 |---|-------|--------|-------|
-| 1 | Run TypeScript in Node.js Natively with Type Stripping | [001-node-type-stripping](https://github.com/DontWorkTheWeekend/ts-weather/tree/001-node-type-stripping) | [Watch](https://youtu.be/mYbc5lGCPQ0) |
+| 3 | Run TypeScript in Node.js Natively with Type Stripping | [003-node-type-stripping](https://github.com/DontWorkTheWeekend/ts-weather/tree/003-node-type-stripping) | [Watch](https://youtu.be/mYbc5lGCPQ0) |
